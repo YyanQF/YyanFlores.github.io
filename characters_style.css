@@ -1,0 +1,310 @@
+/* Importing custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Resetting margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting the background image, size, and position for the body */
+body {
+    background: linear-gradient(#FECD07, #ffda45);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Positioning the header at the top of the page, setting its width, padding, and display properties, and positioning its contents */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Styling the game logo */
+.game-logo {
+    float: left;
+    background: transparent;
+    pointer-events: none;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: -60px;
+}
+
+/* Styling the navigation items */
+.nav-items {
+    font-family: "Jaro", sans-serif;
+    font-size: 20px;
+    margin-top: -90px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color:white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.nav-items a:hover,
+.nav-items a.active {
+    color: #FECD07; 
+    background:#363636;
+}
+
+/* Resetting box-sizing for all elements */
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Positioning the text and styling the h1 element */
+.text {
+    position: absolute;
+    top: 100px;
+    left: 460px;
+    margin-top: 50px;
+
+}
+
+.text h1 {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    color: black;
+}
+
+/* Styling the p element inside the .text class */
+.text p {
+    font-family: "REM", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+/* Styling the small-forward_container class */
+.small-forward_container {
+    background-color: #38AAB8;
+    padding: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 350px;
+    align-items: center;
+}
+
+/* Styling the h2 element inside the small-forward_container class */
+.small-forward_container h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Styling the p element inside the small-forward_container class */
+.small-forward_container p {
+    font-family: "REM", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Styling the small_forward class */
+.small_forward {
+    background-image: url(picture/background.jpg);
+    position: absolute;
+    margin-top: 20px;
+}
+
+/* Styling the power-forward_container class */
+.power-forward_container {
+    background-color: #5460D2;
+    padding: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 150px
+}
+
+/* Styling the h2 element inside the power-forward_container class */
+.power-forward_container h2 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Styling the p element inside the power-forward_container class */
+.power-forward_container p {
+    font-family: "REM", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Styling the power_forward class */
+.power_forward {
+    background-image: url(picture/background.jpg);
+    position: absolute;
+    margin-top: 20px;
+}
+
+/* Styling the center_container class */
+.center_container {
+    background-color: #B90F0F;
+    padding: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 150px
+}
+
+/* Styling the h2 element inside the center_container class */
+.center_container h2 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Styling the p element inside the center_container class */
+.center_container p {
+    font-family: "REM", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Styling the center class */
+.center {
+    background-image: url(picture/background.jpg);
+    position: absolute;
+    margin-top: 20px;
+}
+
+/* Styling the shooting-guard_container class */
+.shooting-guard_container {
+    background-color: #E9692C;
+    padding: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 150px
+}
+
+/* Styling the h2 element inside the shooting-guard_container class */
+.shooting-guard_container h2 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Styling the p element inside the shooting-guard_container class */
+.shooting-guard_container p {
+    font-family: "REM", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Styling the shooting_guard class */
+.shooting_guard {
+    background-image: url(picture/background.jpg);
+    position: absolute;
+    margin-top: 20px;
+}
+
+/* Styling the point-guard_container class */
+.point-guard_container {
+    background-color: #55A02D;
+    padding: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 150px
+}
+
+/* Styling the h2 element inside the point-guard_container class */
+.point-guard_container h2 {
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Styling the p element inside the point-guard_container class */
+.point-guard_container p {
+    font-family: "REM", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Styling the point_guard class */
+.point_guard {
+    background-image: url(picture/background.jpg);
+    position: absolute;
+    margin-top: 20px;
+}
+
+/* Styling the gallery-cell class */
+.gallery-cell {
+    width: 700px;
+    height: 450px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+}
+
+/* Styling the hidden class */
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+/* Styling the show class */
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Styling the footer */
+.footer {
+    background-color: #333;
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+/* Styling the footer content */
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* Styling the social links */
+.social-links {
+    list-style: none; 
+    display: flex;
+    gap: 10px; 
+}
+
+/* Styling the social links anchor tags */
+.social-links li a {
+    color: #fff; 
+    font-size: 20px; 
+    transition: color 0.3s ease; 
+}
+
+/* Styling the hover state of the social links anchor tags */
+.social-links li a:hover {
+    color: #ff0000; 
+
+}

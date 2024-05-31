@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap'); /* importing Nabla font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); /* importing Dancing Script font */
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap'); /* importing Jaro font */
+
+* { /* resetting default styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /* styling the body */
+    background: url(picture/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+
+}
+
+header { /* styling the header */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.game-logo { /* styling the game logo */
+    float: left;
+    background: transparent;
+    pointer-events: none;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: -60px;
+}
+
+.nav-items { /* styling the navigation items */
+    font-family: "Jaro", sans-serif;
+    font-size: 20px;
+    margin-top: -90px;
+}
+
+.nav-items a { /* styling the navigation links */
+    text-decoration: none;
+    color:white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.nav-items a:hover,
+.nav-items a.active { /* styling the hover and active state of the navigation links */
+    color: #FECD07; 
+    background:#363636;
+}
+
+.sign-up { /* styling the sign-up box */
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid #363636;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height .2s ease;
+}
+
+.sign-up .login-box { /* styling the login box */
+    width: 100%;
+    padding: 40px;
+}
+
+.sign-up h1 { /* styling the heading */
+    font-size: 2rem;
+    color: #363636;
+    text-align: center;
+}
+
+.input-box { /* styling the input box */
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #363636;
+    margin: 30px 0;
+}
+
+.input-box label { /* styling the input label */
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #363636;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .4s;
+}
+
+/* styling the input box label on focus and valid input */
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+/* styling the input field */
+.input-box input {
+    width: 100%; /* taking full width */
+    height: 100%; /* taking full height */
+    background: transparent; /* transparent background */
+    border: none; /* no border */
+    outline: none; /* no outline */
+    font-size: 1em; /* font size */
+    color: #363636; /* text color */
+    font-weight: 600; /* font weight */
+    padding: 0 35px 0 5px; /* padding */
+}
+
+/* styling the icon in the input box */
+.input-box .icon {
+    position: absolute; /* absolute positioning */
+    right: 8px; /* positioning on the right */
+    font-size: 1.2rem; /* font size */
+    color: #FECD07; /* icon color */
+    line-height: 57px; /* line height */
+}
+
+/* styling the forgot password section */
+.forgot-password {
+    font-size: .9em; /* font size */
+    color: #FECD07; /* text color */
+    font-weight: 500; /* font weight */
+    margin: -15px 0 15px; /* margin */
+    display: flex; /* flex display */
+    justify-content: space-between; /* justify content */
+}
+
+/* styling the checkbox in the forgot password section */
+.forgot-password label input {
+    accent-color: #fff; /* accent color */
+    margin-right: 3px; /* margin right */
+}
+
+/* styling the link in the forgot password section */
+.forgot-password a {
+    color: #FECD07; /* link color */
+    text-decoration: none; /* no text decoration */
+}
+
+/* styling the hover state of the link in the forgot password section */
+.forgot-password a:hover {
+    text-decoration: underline; /* underline on hover */
+}
+
+/* styling the button */
+.btn {
+    width: 100%; /* taking full width */
+    height: 45px; /* height */
+    background: #FECD07; /* background color */
+    outline: none; /* no outline */
+    border: #363636; /* border */
+    border-radius: 5px; /* border radius */
+    cursor: pointer; /* cursor pointer */
+    color:white; /* text color */
+    font-weight: 500; /* font weight */
+}
+
+/* styling the register section */
+.register {
+    font-size: .9em; /* font size */
+    color: #363636; /* text color */
+    text-align: center; /* text alignment */
+    font-weight: 500; /* font weight */
+    margin: 25px 0 10px; /* margin */
+}
+
+/* styling the link in the register section */
+.register p a {
+    color: #363636; /* link color */
+    text-decoration: none; /* no text decoration */
+}
+
+/* styling the hover state of the link in the register section */
+.register p a:hover {
+    text-decoration: underline; /* underline on hover */
+}

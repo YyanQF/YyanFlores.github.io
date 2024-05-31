@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- below will the image for the icon for the website -->
+    <link rel="icon" href="picture/favicon.ico" type="image/x-icon" /> 
+    <!-- this is the title of the website -->
+    <title>3on3 Freestyle</title> 
+</head>
+<body>
+    
+<header>
+    <!-- for this website I used the official game logo and also put in on everypage  -->
+    <div class="game-logo">
+        <img src="picture/logo.png" alt="" style="height: 200px; width: 200px;">
+    </div>
+
+    <!-- the nav-items stores the other pages such as Home, About, Characters, Download, and Login. I also put active so I can make use of CSS to highlight the selected item -->
+    <nav class="nav-items">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="characters.html">Characters</a>
+            <a href="download.html">Download</a>
+            <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<!-- this is a game video I made in which shows basic gameplay the video also loops and so the video it can be a background video to entice the users -->
+    <video 
+    id="video"
+    loop 
+    autoplay 
+    preload="metadata" 
+    muted
+    tabindex="0"
+    >
+    <source src="video/3on3 Short Video.mp4" type="video/mp4"> 
+</video>
+
+<!-- this will show up infront of the video this shows the same game logo as before but it comes with a tagline -->
+<div class="home">
+    <img src="picture/logo.png">
+    <h1>
+        Rule the Streets <br> with your Team!
+    </h1>
+</div>
+
+<!-- this is where the basic info about the game is, this shows the developers, the platform can be use to play, genre, multiplayer application, how many players can play, and the rating of the game  -->
+<div class="game-info">
+        <h1 class="info">Basic Game Info</h1>
+    <p class="info-text"> Welcome to 3on3 Freestyle! <br> Experience a fast match with or against player across all platforms <br>
+        <br>
+    Developers/Publisher: Joycity Corporation <br>
+    Platforms: Playstation, Xbox, PC <br>
+    Genre: Sports <br>
+    Online Multiplayer: Up to 1 - 6 players <br>
+    Local + Online Play: Up to 3 players <br>
+    Ratings: For Everyone
+    </p>
+</div>
+
+
+<footer class="footer">
+    <!-- this is the footer section of the website, it contains the copyright information and social media links -->
+    <div class="footer-content">
+        <p>&copy; 2023 Joycity Corporation. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </div>
+</footer>
+
+
+</body>
+</html>

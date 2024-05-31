@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login_style.css">
+    <!-- for this website I used the official game logo and also put in on every page -->
+    <link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
+    <!-- this is the title of the website -->
+    <title>3on3 Freestyle</title>
+</head>
+<body>
+    
+<header>
+    <!-- for this website I used the official game logo and also put in on every page -->
+    <div class="game-logo">
+        <img src="picture/logo.png" alt="" style="height: 200px; width: 200px;">
+    </div>
+    <!-- the nav-items stores the other pages such as Home, About, Characters, Download, and Login. I also put active so I can make use of CSS to highlight the selected item -->
+    <nav class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="characters.html">Characters</a>
+            <a href="download.html">Download</a>
+            <a href="login.html"class="active">Login</a>
+    </nav>
+</header>
+
+<!-- this is the sign-up section of the website, it contains the login form -->
+<div class="sign-up">
+
+    <!-- this is the login box, it contains the login form fields -->
+    <div class="login-box">
+        <h1>Login</h1>
+        <form action="#">
+            <!-- this is the input box for email, it contains an icon and a label -->
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <!-- this is the input box for password, it contains an icon and a label -->
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <!-- this is the forgot password section, it contains a checkbox and a link -->
+            <div class="forgot-password">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <!-- this is the login button -->
+            <button type="sumbit" class="btn">Login</button>
+            <!-- this is the register section, it contains a link to the register page -->
+            <div class="register">
+                <p>Don't have an account? <a href="#" class="register-link">Register Here</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- this is the script tag for the login script -->
+<script src="login_script.js"></script>
+<!-- these are the script tags for the ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

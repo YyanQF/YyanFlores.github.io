@@ -1,0 +1,129 @@
+/* Importing custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dancing+Script:wght@400..700&family=Moirai+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    background: #FECD07;
+}
+
+/* Styling the header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Styling the game logo */
+.game-logo {
+    float: left;
+    background: transparent;
+    pointer-events: none;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: -60px;
+}
+
+/* Styling the navigation items */
+.nav-items {
+    font-family: "Jaro", sans-serif;
+    font-size: 20px;
+    margin-top: -90px;
+}
+
+/* Styling the navigation links */
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    z-index: 1000; /* setting z-index to ensure the links appear above other elements */
+}
+
+/* Styling the hover and active state of the navigation links */
+.nav-items a:hover,
+.nav-items a.active {
+    color: #FECD07; 
+    background:#363636;
+    z-index: 1000; 
+}
+
+.download {
+    font-family: "Black Han Sans", sans-serif;
+    color: white;
+    font-size: 280px;
+    text-shadow: 6px 6px 6px #363636;
+    top: 130px;
+    left: 90px;
+    position: absolute;
+    z-index: 101;
+}
+
+
+.pic {
+    float: right;
+    margin-right: 100px;
+    border: 4px solid #363636;
+    z-index: 100;
+}
+
+.download_icons {
+    float: right;
+    margin-right: 120px;
+    margin-top: 600px;
+    font-size: 80px;
+    color: #FECD07;
+}
+
+.download_icons .xbox {
+    margin-right: 70px;
+    border: 4px solid #363636;
+    border: 4px solid #363636;
+    background-color: #363636;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+.download_icons .playstation {
+    margin-right: 70px;
+    border: 4px 4px 4px solid #363636;
+    border: 4px solid #363636;
+    background-color: #363636;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    
+}
+
+.download_icons .mac {
+    border: 4px solid #363636;
+    background-color: #363636;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: px;
+}
+
+.download_icons :hover {
+    background-color: white;
+    color: #363636;
+}

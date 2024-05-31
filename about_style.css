@@ -1,0 +1,188 @@
+/* Importing the Nabla font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+/* Importing the Jaro font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+/* Importing the Shrikhand font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body element */
+body {
+    background: #363636;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Styling the header element */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Styling the game logo */
+.game-logo {
+    float: left;
+    background: transparent;
+    pointer-events: none;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: -60px;
+}
+
+/* Styling the navigation items */
+.nav-items {
+    font-family: "Jaro", sans-serif;
+    font-size: 20px;
+    margin-top: -90px;
+}
+
+/* Styling the navigation links */
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+/* Styling the hover and active states of the navigation links */
+.nav-items a:hover,
+.nav-items a.active {
+    color: #FECD07; 
+    background: #363636;
+}
+
+/* Styling the background of the slide */
+.slide.bg {
+    opacity: 0.75;
+}
+
+/* Styling the slide */
+.slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Styling the first slide */
+.slide.one { 
+    background-image: url(picture/misc/about\ page.png); 
+}
+
+/* Styling the h3 element in the first slide */
+.slide.one h3 {
+    margin-top: 20rem;
+    color: #FECD07;
+    text-align: center;
+    text-shadow: #363636;
+    font-size: 70px;
+}
+
+/* Styling the second slide */
+.slide.two {
+    background-image: url(picture/misc/screenshot_01.jpg); 
+}
+
+/* Styling the p element in the second slide */
+.slide.two p {
+    font-family: "Shrikhand", serif;
+    margin-top: 9rem;
+    margin-left: -100px;
+    margin-right: -6rem;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 5px #363636, 2px 2px 0px #FECD07;
+}
+
+/* Styling the h2 element in the third slide */
+.slide.three h2 {
+    font-family: "Shrikhand", serif;
+    font-size: 40px;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 0px 5px #363636, 2px 2px 0px #FECD07;
+}
+
+/* Styling the p element in the third slide */
+.slide.three p {
+    font-family: "Shrikhand", serif;
+    margin-top: 2rem;
+    margin-left: -100px;
+    margin-right: -100px;
+    font-size: 28px;
+    color: white;
+    text-shadow: 0px 0px 5px #FECD07, 2px 2px 0px #363636;
+}
+
+/* Styling the video element in the third slide */
+.slide.three video {
+    width: 35rem;
+    height: 35rem;
+    margin-top: -150px;
+    margin-left: 70px;
+}
+
+/* Styling the third slide */
+.slide.three {
+    background-image: url(picture/misc/slide.three.png);
+}
+
+/* Styling the fourth slide */
+.slide.four { 
+    background-image: url(picture/misc/slide.four.png); 
+}
+
+/* Styling the fifth slide */
+.slide.five { 
+    background-image: url(picture/misc/slide.five.png); 
+}
+
+/* Styling the footer */
+.footer {
+    background-color: #333;
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+/* Styling the footer content */
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* Styling the social links */
+.social-links {
+    list-style: none; 
+    display: flex;
+    gap: 10px; 
+}
+
+/* Styling the social links anchor tags */
+.social-links li a {
+    color: #fff; 
+    font-size: 20px; 
+    transition: color 0.3s ease; 
+}
+
+/* Styling the hover state of the social links anchor tags */
+.social-links li a:hover {
+    color: #ff0000; 
+
+}

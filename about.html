@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the stylesheet for the about page -->
+    <link rel="stylesheet" href="about_style.css">
+    <!-- linking the second stylesheet for the about page -->
+    <link rel="stylesheet" href="about_style2.css">
+    <!-- script for code prettify -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+    <!-- script for the about page -->
+    <script src="about_script.js"></script>
+    <!-- for this website I used the official game logo and also put in on every page -->
+    <link rel="icon" href="picture/favicon.ico" type="image/x-icon" />
+    <!-- this is the title of the website -->
+    <title>3on3 Freestyle</title>
+</head>
+<body>
+    
+    <header>
+        <!-- for this website I used the official game logo and also put in on every page -->
+        <div class="game-logo">
+            <img src="picture/logo.png" alt="" style="height: 200px; width: 200px;">
+        </div>
+        <!-- the nav-items stores the other pages such as Home, About, Characters, Download, and Login. I also put active so I can make use of CSS to highlight the selected item -->
+        <nav class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="about.html"class="active">About</a>
+                <a href="characters.html">Characters</a>
+                <a href="download.html">Download</a>
+                <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+<div id="indicator"></div>
+<div id="scroller"></div>
+<section id="instalax" data-topoffset="0">
+    <div class="slide one">
+        <div class="content" data-width="1000" data-start="center" data-stop="top" data-fade="out">
+            <h3><span class="arrow">&darr;</span></h3>
+        </div>
+    </div>
+    <div class="slide two" data-fade="true" data-backgroundscroll=".85">
+        <div class="content" data-width="451" data-start="center" data-stop="center" data-fade="out">
+            <p class="description-p">Work with your teammates to pull off rim-shaking slam dunks, awe-inspiring alley-oops, flashy no-look passes, and clutch outside shots which breaks the heart of the opposing team in competitive games filled with the joy and energy of street basketball!</p>
+    </div>
+    <div class="slide three" data-fade="true" data-noslide="true">
+        <div class="content" data-width="200" data-start="center" data-stop="left">
+            <video 
+            id="video"
+            loop 
+            autoplay 
+            preload="metadata" 
+            muted
+            tabindex="0"
+            >
+            <source src="video/short clip_friends .mp4" type="video/mp4"> 
+        </video>
+</div>
+    </div>
+    <div class="slide four" data-backgroundscroll=".5">
+        <div class="content" data-width="451" data-start="center" data-stop="center">
+        </div>
+    </div>
+    <div class="slide five" data-fade="true" data-noslide="true">
+        <div class="content" data-width="451" data-start="bottom" data-stop="top">
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="about_script2.js"></script>
+</body>
+</html>
+

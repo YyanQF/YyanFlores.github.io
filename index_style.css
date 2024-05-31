@@ -1,0 +1,178 @@
+/* Importing custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+}
+
+/* Styling the header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Styling the game logo */
+.game-logo {
+    float: left;
+    background: transparent;
+    pointer-events: none;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: -60px;
+}
+
+/* Styling the navigation items */
+.nav-items {
+    font-family: "Jaro", sans-serif;
+    font-size: 20px;
+    margin-top: -90px;
+}
+
+/* Styling the navigation links */
+.nav-items a {
+    text-decoration: none;
+    color:white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+/* Styling the hover and active state of the navigation links */
+.nav-items a:hover,
+.nav-items a.active {
+    color: #FECD07; 
+    background:#363636;
+}
+
+/* Styling the video background */
+video {
+    width: 99vw;
+    height: 100vh; 
+    object-fit: cover;
+    position: absolute;
+}
+
+/* Styling the home section */
+.home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    text-align: center;
+}
+
+/* Styling the home image */
+.home img {
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin-bottom: -100px;
+    margin-top: -100px;
+}
+
+/* Styling the home heading */
+.home h1 {
+    font-family: "Nabla", sans-serif;
+    font-size: 50px;
+}
+
+/* Styling the game information section */
+.game-info {
+    background-image: url(picture/misc/screenshot_07.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling the game information heading */
+.game-info h1 {
+    position: absolute;
+    margin-top: 13rem;
+    margin-left: 56rem;
+    font-family: "Dancing Script", cursive;
+    background-color: #FECD07;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 320px;
+    border-radius: 15px;
+    z-index: 120;
+    font-size: 50px;
+}
+
+/* Styling the game information paragraph */
+.game-info p {
+    font-family: "Shrikhand", serif; 
+    font-weight: 100; 
+    font-size: 20px; 
+    margin-top: 20rem;
+    margin-left: 58rem; 
+    margin-right: 8rem; 
+    z-index: 130; 
+    position: relative; 
+    overflow: visible; 
+}
+
+/* Styling the footer */
+.footer {
+    background-color: #333;
+    color: #fff; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+/* Styling the footer content */
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+/* Styling the social links */
+.social-links {
+    list-style: none; 
+    display: flex;
+    gap: 10px; 
+}
+
+/* Styling the social links anchor tags */
+.social-links li a {
+    color: #fff; 
+    font-size: 20px; 
+    transition: color 0.3s ease; 
+}
+
+/* Styling the hover state of the social links anchor tags */
+.social-links li a:hover {
+    color: #ff0000; 
+
+}
